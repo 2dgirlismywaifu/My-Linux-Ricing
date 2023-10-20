@@ -1,11 +1,6 @@
 <div align="center">
-<style>
-  .avatar {
-    border-radius: 30px;
-  }
-</style>
   <a href="https://github.com/2dgirlismywaifu/My-Linux-Ricing">
-    <img class="avatar" alt="2dgirlismywaifu" src="https://avatars.githubusercontent.com/u/59259855?v=4" width="200" height="200"/>
+    <img class="avatar" alt="2dgirlismywaifu" src="https://avatars.githubusercontent.com/u/59259855?v=4" width="200" height="200" style="border-radius: 30px"/>
   </a>
 
 <h3 align="center", style="font-size:25px">My Hyprland Linux Ricing</h3>
