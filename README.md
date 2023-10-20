@@ -1,6 +1,6 @@
 <div align="center">
   <a href="https://github.com/2dgirlismywaifu/My-Linux-Ricing">
-    <img class="avatar" alt="2dgirlismywaifu" src="https://avatars.githubusercontent.com/u/59259855?v=4" width="200" height="200" style="border-radius: 30px"/>
+    <img class="avatar" alt="2dgirlismywaifu" src="https://images.weserv.nl/?url=avatars.githubusercontent.com/u/59259855?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d" width="200" height="200"/>
   </a>
 
 <h3 align="center", style="font-size:25px">My Hyprland Linux Ricing</h3>
