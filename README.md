@@ -108,8 +108,8 @@ yay -S obs-studio-rc ffmpeg-obs cef-minimal-obs-rc-bin pipewire pipewire-alsa pi
 ###### To get started, let's make sure we have all the necessary prerequisites. In this case, I'm using Paru as the AUR helper, but keep in mind that your system may require a different approach.
 
 ```sh
-git clone https://github.com/linuxmobile/hyprland-dots.git
-cd hyprland-dots/
+git clone https://github.com/2dgirlismywaifu/My-Linux-Ricing.git
+cd My-Linux-Ricing
 rsync -avxHAXP --exclude '.git*' .* ~/
 ```
 
