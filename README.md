@@ -37,8 +37,7 @@
 
 ## 🌸 Setup
 
-| ![1](./assets/screen-short-01.png) | ![2](./assets/screen-short-02.png) |
-| --- | --- |
+![1](./assets/screen-short-01.png)![2](./assets/screen-short-02.png) |
 
 ## Install steps (Take care about it. Isn't a tutorial)
 <div align="left">
