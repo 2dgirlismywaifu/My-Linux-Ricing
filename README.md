@@ -4,7 +4,10 @@
   </a>
 
 <h3 align="center", style="font-size:25px">My Hyprland Linux Ricing</h3>
-<p1 align="center", style="font-size:20px"><strong>FROM ELYSIA WITH LOVE</strong></p1><br />
+
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Caveat&size=30&pause=1000&color=C33DF7&center=true&vCenter=true&random=false&width=435&lines=FROM+ELYSIA+WITH+LOVE+)](https://git.io/typing-svg)
+
+<br />
   <a href="https://github.com/linuxmobile/hyprland-dots", style="font-size:20px"><strong>Inspired from @linuxmobile Ricing</strong></a>
 <hr>
 
@@ -37,7 +40,7 @@
 
 ## 🌸 Setup
 
-![1](./assets/screen-short-01.png)![2](./assets/screen-short-02.png) |
+![1](./assets/screen-short-01.png)![2](./assets/screen-short-02.png)
 
 ## Install steps (Take care about it. Isn't a tutorial)
 <div align="left">
