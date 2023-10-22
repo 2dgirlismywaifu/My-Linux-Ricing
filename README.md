@@ -3,11 +3,9 @@
     <img class="avatar" alt="2dgirlismywaifu" src="https://images.weserv.nl/?url=avatars.githubusercontent.com/u/59259855?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d" width="200" height="200"/>
   </a>
 
-<h3 align="center", style="font-size:25px">My Hyprland Linux Ricing</h3>
-
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Caveat&size=30&pause=1000&color=C33DF7&center=true&vCenter=true&random=false&width=435&lines=FROM+ELYSIA+WITH+LOVE+)](https://git.io/typing-svg)
-
-<br />
+<h3 align="center", style="font-size:25px">My Hyprland Linux Ricing</h3> 
+  <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Caveat&size=30&pause=1000&color=E462F7&center=true&vCenter=true&random=false&width=435&lines=%F0%9F%92%95+FROM+ELYSIA+WITH+LOVE+%F0%9F%92%95" alt="Typing SVG" /></a>
+  <br />
   <a href="https://github.com/linuxmobile/hyprland-dots", style="font-size:20px"><strong>Inspired from @linuxmobile Ricing</strong></a>
 <hr>
 
