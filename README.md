@@ -32,7 +32,7 @@
 - **Notify Daemon** • [Dunst](https://github.com/dunst-project/dunst) 🍃
   Minimalist and functional!
 - **Launcher** • [Rofi](https://github.com/davatorium/rofi) 🚀 Beautiful list launcher
-  y customizable!
+  customizable!
 - **File Manager** • [Ranger](https://github.com/ranger/ranger)🔖 Based Catppuccin theme!
 
 
@@ -40,7 +40,7 @@
 
 ![1](./assets/screen-short-01.png)![2](./assets/screen-short-02.png)
 
-## Install steps (Take care about it. Isn't a tutorial)
+## Install steps (Take care about it. This is RTFM)
 <div align="left">
 
 ### Hyprland Stuff
