@@ -21,9 +21,9 @@
 
 
 
-- **Window Manager** • [Hyprland](https://github.com/hyprwm/Hyprland)🎨 Tiles
+- **Window Manager** • [Hyprland](https://github.com/hyprwm/Hyprland)🎨 Window Tiles
   Everywhere!
-- **Shell** • [Zsh](https://www.zsh.org) 🐚 con
+- **Shell** • [Zsh](https://www.zsh.org) 🐚 theme with
   [starship](https://github.com/starship/starship) Cross Shell Platform!
 - **Terminal** • [WezTerm](https://github.com/wez/wezterm) 💻 A powerful term
   with gpu support!
@@ -31,9 +31,9 @@
   Patched waybar following hyprland faq!
 - **Notify Daemon** • [Dunst](https://github.com/dunst-project/dunst) 🍃
   Minimalist and functional!
-- **Launcher** • [Rofi](https://github.com/davatorium/rofi) 🚀 Realmente rápido
+- **Launcher** • [Rofi](https://github.com/davatorium/rofi) 🚀 Beautiful list launcher
   y customizable!
-- **File Manager** • [Ranger](https://github.com/ranger/ranger)🔖 custom!
+- **File Manager** • [Ranger](https://github.com/ranger/ranger)🔖 Based Catppuccin theme!
 
 
 ## 🌸 Setup
