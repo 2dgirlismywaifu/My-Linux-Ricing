@@ -1,0 +1,6 @@
+#!/bin/bash
+
+cp -r ~/Themes/Everforest/. ~/Themes/Everforest/.zshrc ~/ &
+wal -b 232A2E -i ~/Wallpaper/kafka_02.png &
+qtile cmd-obj -o cmd -f restart 
+

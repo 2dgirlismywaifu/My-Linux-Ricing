@@ -1,0 +1,6 @@
+#!/bin/bash
+
+cp -r ~/Themes/Sakura/. ~/Themes/Sakura/.zshrc ~/ &
+wal -b 282738 -i ~/Wallpaper/kafka_04.png &
+qtile cmd-obj -o cmd -f restart 
+

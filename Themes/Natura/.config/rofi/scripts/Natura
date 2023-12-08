@@ -1,0 +1,6 @@
+#!/bin/bash
+
+cp -r ~/Themes/Natura/. ~/Themes/Natura/.zshrc ~/ &
+wal -i ~/Wallpaper/kafka_03.png &
+qtile cmd-obj -o cmd -f restart 
+
