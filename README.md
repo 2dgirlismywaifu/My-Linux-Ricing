@@ -47,7 +47,7 @@
   <p float="left">
     <img alt="from-elysia-with-love" src="./assets/elysia/elysia-hi.png" width="170" height="170"/>
     <img alt="kafka-mama" src="./assets/kafka/Kafka_5.png" width="150" height="150"/>
-    <img style="border-radius: 50%;" alt="furukawa-rikka-deviantart" src="./assets/furukawa-rikka/furukawa-rikka-reverb-girl.png" width="170" height="170"/>
+    <img style="border-radius: 50%;" alt="furukawa-rikka-deviantart" src="https://images.weserv.nl/?url=raw.githubusercontent.com/2dgirlismywaifu/My-Linux-Ricing/main/assets/furukawa-rikka/furukawa-rikka-reverb-girl.png&h=300&w=300&fit=cover&mask=circle&maxage=7d" width="170" height="170"/>
   </p>
 </div>
 
