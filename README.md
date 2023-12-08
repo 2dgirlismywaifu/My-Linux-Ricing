@@ -3,10 +3,10 @@
     <img class="avatar" alt="2dgirlismywaifu" src="https://images.weserv.nl/?url=avatars.githubusercontent.com/u/59259855?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d" width="200" height="200"/>
   </a>
 
-<h3 align="center", style="font-size:25px">My Hyprland Linux Ricing</h3> 
-  <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Caveat&size=30&pause=1000&color=E462F7&center=true&vCenter=true&random=false&width=435&lines=%F0%9F%92%95+FROM+ELYSIA+WITH+LOVE+%F0%9F%92%95" alt="Typing SVG" /></a>
+<h3 align="center", style="font-size:25px">My Linux Ricing Collection</h3>
+  <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Caveat&size=30&pause=1000&color=E462F7&center=true&vCenter=true&random=false&width=435&lines=%F0%9F%92%95+Inspired+by+r%2Funinxporn+%F0%9F%92%95" alt="Typing SVG" /></a>
   <br />
-  <a href="https://github.com/linuxmobile/hyprland-dots", style="font-size:20px"><strong>Inspired from @linuxmobile Ricing</strong></a>
+  <a href="https://github.com/linuxmobile/hyprland-dots", style="font-size:20px"><strong>Long Live With Arch Linux</strong></a>
 <hr>
 
 ![Contributors][contributors-shield]
@@ -18,122 +18,46 @@
 
 </div>
 
-
-
-
-- **Window Manager** • [Hyprland](https://github.com/hyprwm/Hyprland)🎨 Window Tiles
-  Everywhere!
-- **Shell** • [Zsh](https://www.zsh.org) 🐚 theme with
-  [starship](https://github.com/starship/starship) Cross Shell Platform!
-- **Terminal** • [WezTerm](https://github.com/wez/wezterm) 💻 A powerful term
-  with gpu support!
-- **Panel** • [Waybar](https://aur.archlinux.org/packages/waybar-hyprland-git)🍧
-  Patched waybar following hyprland faq!
-- **Notify Daemon** • [Dunst](https://github.com/dunst-project/dunst) 🍃
-  Minimalist and functional!
-- **Launcher** • [Rofi](https://github.com/davatorium/rofi) 🚀 Beautiful list launcher
+- **Daily Device** • MSI GF63 Thin 10SC
+- **CPU** • Intel® Core™ i5-10500H
+- **Integrated GPU** • Intel® UHD Graphics for 10th
+- **Discrete GPU** • NVIDIA GeForce GTX 1650 Max-Q Design
+- **Memory** • 16GB SODIM-DDR4
+- **Display** • 15.6" FHD (1920x1080), IPS-Level 144Hz 45% NTSC Thin Bezel
+- **Main OS** • Windows 11 Pro
+- **Second OS** • EndeavourOS (based on Arch Linux)
   customizable!
-- **File Manager** • [Ranger](https://github.com/ranger/ranger)🔖 Based Catppuccin theme!
+- **Hackintosh** • [My-OpenCore Hackintosh](https://github.com/2dgirlismywaifu/My-Opencore-Hackintosh)
 
-
-## 🌸 Setup
+## 🌸 [Hyprland](https://github.com/2dgirlismywaifu/My-Linux-Ricing/tree/hyprland)
 
 ![1](./assets/screen-short-01.png)![2](./assets/screen-short-02.png)
 
-## Install steps (Take care about it. This is RTFM)
-<div align="left">
+## 🌸 [Qtile](https://github.com/2dgirlismywaifu/My-Linux-Ricing/tree/qtile)
 
-### Hyprland Stuff
+![1](./assets/screen-short-03.png)![2](./assets/screen-short-04.png)
 
-<details>
+## 🌸 [Openbox](https://github.com/2dgirlismywaifu/My-Linux-Ricing/tree/openbox)
 
-###### To get started, let's make sure we have all the necessary prerequisites. In this case, I'm using Yay as the AUR helper, you can use any other helper like Paru or install the packages manually.
-
-- Installation using yay
-
-```sh
-yay -S hyprland-git hyprpicker-git waybar-git dunst nwg-look wf-recorder wlogout wlsunset swaylock-effects
-```
-</details>
-
-### Dependencies
-<details>
-
-- Installation using yay
-
-```sh
-yay -S colord tumbler fnm ffmpegthumbnailer gnome-keyring grimblast-git sdbus-cpp gtk-engine-murrine imagemagick kvantum pamixer playerctl polkit-gnome qt5-quickcontrols qt5-quickcontrols2 qt5-graphicaleffects qt5-wayland qt6-wayland swww ttf-font-awesome tumbler ttf-jetbrains-mono ttf-icomoon-feather xdg-desktop-portal-hyprland-git xdotool xwaylandvideobridge cliphist qt5-imageformats qt5ct
-```
-
-</details>
-
-### Apps & More
-<details>
-
-#### CLI & Tools
-```sh
-yay -S btop neofetch noise-suppression-for-voice rofi-lbonn-wayland-git rofi-emoji starship zsh viewnior ocs-url
-```
-#### Browser & File Explorer
-
-```sh
-yay -S firefox file-roller noto-fonts noto-fonts-cjk noto-fonts-emoji ranger thunar thunar-archive-plugin thunar-volman wezterm ttf-iosevka ttf-iosevka-nerd
-```
-#### VSCode
-
-```sh
-yay -S visual-studio-code-bin
-```
-#### Theme Based
-
-```sh
-yay -S catppuccin-gtk-theme-macchiato catppuccin-gtk-theme-mocha papirus-icon-theme sddm-git swaylock-effects-git kvantum kvantum-theme-catppuccin-git
-```
-#### Pipewire & OBS
-
-```sh
-yay -S obs-studio-rc ffmpeg-obs cef-minimal-obs-rc-bin pipewire pipewire-alsa pipewire-audio pipewire-pulse pipewire-jack wireplumber gst-plugin-pipewire pavucontrol
-```
-
-</details>
-
-</div>
-
-<div align="left">
-
-### DOTFILES
-
-<details>
-
-
-###### To get started, let's make sure we have all the necessary prerequisites. In this case, I'm using Paru as the AUR helper, but keep in mind that your system may require a different approach.
-
-```sh
-git clone https://github.com/2dgirlismywaifu/My-Linux-Ricing.git
-cd My-Linux-Ricing
-rsync -avxHAXP --exclude '.git*' .* ~/
-```
-
-</details>
-</div>
+![1](./assets/screen-short-05.png)![2](./assets/screen-short-06.png)
 
 ## Credits
 <div align="center">
 
   <p float="left">
-    <img alt="from-elysia-with-love" src="./assets/elysia-hi.png" width="200" height="200"/>
-    <img alt="from-elysia-with-love" src="./assets/from-elysia-with-love.png" width="200" height="200"/>
-    <img alt="from-elysia-with-love" src="./assets/elysia-music.png" width="200" height="200"/>
+    <img alt="from-elysia-with-love" src="./assets/elysia/elysia-hi.png" width="170" height="170"/>
+    <img alt="kafka-mama" src="./assets/kafka/Kafka_5.png" width="150" height="150"/>
+    <img style="border-radius: 50%;" alt="furukawa-rikka-deviantart" src="./assets/furukawa-rikka/furukawa-rikka-reverb-girl.png" width="170" height="170"/>
   </p>
 </div>
 
 _Beauty community: [r/unixporn](https://www.reddit.com/r/unixporn)._
 
-**©** Elysia is a character from Honkai Impact 3rd, a game by Hoyoverse (miHoYo)
+**©** Elysia, Kafka is a character design by Hoyoverse
 
 **©** Picture used in this sources come from Pixiv and N0va Desktop
 
-**©** This repository is forked from [linuxmobile](https://github.com/linuxmobile/hyprland-dots) with clean-up some useless shell script.
+**©** Openbox theme use wallpaper from [furukawa-rikka](https://www.deviantart.com/furukawa-rikka)
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
