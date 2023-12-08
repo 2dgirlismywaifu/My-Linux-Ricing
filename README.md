@@ -1,6 +1,6 @@
 <div align="center">
   <a href="https://github.com/2dgirlismywaifu/My-Linux-Ricing">
-    <img class="avatar" alt="2dgirlismywaifu" src="https://images.weserv.nl/?url=avatars.githubusercontent.com/u/59259855?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d" width="200" height="200"/>
+    <img class="avatar" alt="2dgirlismywaifu" src="https://images.weserv.nl/?url=raw.githubusercontent.com/2dgirlismywaifu/My-Linux-Ricing/main/assets/elysia/Elysia.png&h=300&w=300&fit=cover&mask=circle&maxage=7d" width="200" height="200"/>
   </a>
 
 <h3 align="center", style="font-size:25px">My Hyprland Linux Ricing</h3>
@@ -9,17 +9,7 @@
   <a href="https://github.com/linuxmobile/hyprland-dots", style="font-size:20px"><strong>Inspired from @linuxmobile Ricing</strong></a>
 <hr>
 
-![Contributors][contributors-shield]
-  [![Stargazers][stars-shield]][stars-url]
-  ![Reposize][size-shield]
-  ![Lastcommit][commit-shield]
-  [![Issues][issues-shield]][issues-url]
-  [![APACHE License][license-shield]][license-url]
-
 </div>
-
-
-
 
 - **Window Manager** • [Hyprland](https://github.com/hyprwm/Hyprland)🎨 Window Tiles
   Everywhere!
@@ -106,7 +96,7 @@ yay -S obs-studio-rc ffmpeg-obs cef-minimal-obs-rc-bin pipewire pipewire-alsa pi
 <details>
 
 
-###### To get started, let's make sure we have all the necessary prerequisites. In this case, I'm using Paru as the AUR helper, but keep in mind that your system may require a different approach.
+###### Now that we have all the dependencies installed, let's clone the repository and copy the files to the home directory
 
 ```sh
 git clone --branch hyprland https://github.com/2dgirlismywaifu/My-Linux-Ricing.git
@@ -121,9 +111,9 @@ rsync -avxHAXP --exclude '.git*' .* ~/
 <div align="center">
 
   <p float="left">
-    <img alt="from-elysia-with-love" src="./assets/elysia-hi.png" width="200" height="200"/>
-    <img alt="from-elysia-with-love" src="./assets/from-elysia-with-love.png" width="200" height="200"/>
-    <img alt="from-elysia-with-love" src="./assets/elysia-music.png" width="200" height="200"/>
+    <img alt="from-elysia-with-love" src="https://raw.githubusercontent.com/2dgirlismywaifu/My-Linux-Ricing/main/assets/elysia/elysia-hi.png" width="200" height="200"/>
+    <img alt="from-elysia-with-love" src="https://raw.githubusercontent.com/2dgirlismywaifu/My-Linux-Ricing/main/assets/elysia/from-elysia-with-love.png" width="200" height="200"/>
+    <img alt="from-elysia-with-love" src="https://raw.githubusercontent.com/2dgirlismywaifu/My-Linux-Ricing/main/assets/elysia/elysia-music.png" width="200" height="200"/>
   </p>
 </div>
 
@@ -134,19 +124,3 @@ _Beauty community: [r/unixporn](https://www.reddit.com/r/unixporn)._
 **©** Picture used in this sources come from Pixiv and N0va Desktop
 
 **©** This repository is forked from [linuxmobile](https://github.com/linuxmobile/hyprland-dots) with clean-up some useless shell script.
-
-<!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/2dgirlismywaifu/My-Linux-Ricing.svg?style=for-the-badge&color=C9CBFF&logoColor=D9E0EE&labelColor=302D41
-[contributors-url]: https://github.com/2dgirlismywaifu/My-Linux-Ricing/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/2dgirlismywaifu/My-Linux-Ricing.svg?style=for-the-badge&color=C9CBFF&logoColor=D9E0EE&labelColor=302D41
-[forks-url]: https://github.com/2dgirlismywaifu/My-Linux-Ricing/network/members
-[stars-shield]: https://img.shields.io/github/stars/2dgirlismywaifu/My-Linux-Ricing.svg?style=for-the-badge&color=C9CBFF&logoColor=D9E0EE&labelColor=302D41
-[size-shield]: https://img.shields.io/github/repo-size/2dgirlismywaifu/My-Linux-Ricing.svg?style=for-the-badge&color=C9CBFF&logoColor=D9E0EE&labelColor=302D41
-[linecount-shield]: https://img.shields.io/tokei/lines/github/2dgirlismywaifu/My-Linux-Ricing?color=C9CBFF&labelColor=302D41&style=for-the-badge
-[commit-shield]: https://img.shields.io/github/last-commit/2dgirlismywaifu/My-Linux-Ricing.svg?style=for-the-badge&color=C9CBFF&logoColor=D9E0EE&labelColor=302D41
-[stars-url]: https://github.com/2dgirlismywaifu/My-Linux-Ricing/stargazers
-[issues-shield]: https://img.shields.io/github/issues/2dgirlismywaifu/My-Linux-Ricing.svg?style=for-the-badge&color=C9CBFF&logoColor=D9E0EE&labelColor=302D41
-[issues-url]: https://github.com/2dgirlismywaifu/My-Linux-Ricing/issues
-[license-shield]: https://img.shields.io/github/license/2dgirlismywaifu/My-Linux-Ricing.svg?style=for-the-badge&color=C9CBFF&logoColor=D9E0EE&labelColor=302D41
-[license-url]: https://github.com/2dgirlismywaifu/My-Linux-Ricing/blob/main/LICENSE
