@@ -6,7 +6,7 @@
 <h3 align="center", style="font-size:25px">My Linux Ricing Collection</h3>
   <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Caveat&size=30&pause=1000&color=E462F7&center=true&vCenter=true&random=false&width=435&lines=%F0%9F%92%95+Inspired+by+r%2Funinxporn+%F0%9F%92%95" alt="Typing SVG" /></a>
   <br />
-  <a href="https://github.com/linuxmobile/hyprland-dots", style="font-size:20px"><strong>Long Live With Arch Linux</strong></a>
+  <a href="https://wiki.archlinux.org/title/Arch_Linux", style="font-size:20px"><strong>Long Live With Arch Linux</strong></a>
 <hr>
 
 ![Contributors][contributors-shield]
