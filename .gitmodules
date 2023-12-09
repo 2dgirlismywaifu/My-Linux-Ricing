@@ -1,0 +1,8 @@
+[submodule ".config/hyprland"]
+	branch = hyprland
+	path = .config/hyprland
+	url = https://github.com/2dgirlismywaifu/My-Linux-Ricing/
+[submodule ".config/qtile"]
+	branch = qtile
+	path = .config/qtile
+	url = https://github.com/2dgirlismywaifu/My-Linux-Ricing/
