@@ -3,23 +3,13 @@
     <img class="avatar" alt="2dgirlismywaifu" src="https://images.weserv.nl/?url=avatars.githubusercontent.com/u/59259855?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d" width="200" height="200"/>
   </a>
 
-<h3 align="center", style="font-size:25px">My Hyprland Linux Ricing</h3> 
-  <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Caveat&size=30&pause=1000&color=E462F7&center=true&vCenter=true&random=false&width=435&lines=%F0%9F%92%95+FROM+ELYSIA+WITH+LOVE+%F0%9F%92%95" alt="Typing SVG" /></a>
+<h3 align="center", style="font-size:25px">My Openbox Linux Ricing</h3>
+  <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Caveat&size=30&pause=1000&color=E462F7&center=true&vCenter=true&random=false&width=435&lines=%F0%9F%92%95+With+Anime+Girl+Picture+Collections+%F0%9F%92%95" alt="Typing SVG" /></a>
   <br />
-  <a href="https://github.com/linuxmobile/hyprland-dots", style="font-size:20px"><strong>Inspired from @linuxmobile Ricing</strong></a>
+  <a href="https://github.com/owl4ce/dotfiles", style="font-size:20px"><strong>Inspired from @owl4ce Ricing</strong></a>
 <hr>
 
-![Contributors][contributors-shield]
-  [![Stargazers][stars-shield]][stars-url]
-  ![Reposize][size-shield]
-  ![Lastcommit][commit-shield]
-  [![Issues][issues-shield]][issues-url]
-  [![APACHE License][license-shield]][license-url]
-
 </div>
-
-
-
 
 - **Window Manager** • [Hyprland](https://github.com/hyprwm/Hyprland)🎨 Window Tiles
   Everywhere!
@@ -38,7 +28,7 @@
 
 ## 🌸 Setup
 
-![1](./assets/screen-short-01.png)![2](./assets/screen-short-02.png)
+![1](./assets/Screen-short-01.png)![2](./assets/Screen-short-04.png) ![3](./assets/Screen-short-02.png) ![4](./assets/Screen-short-03.png) ![5](./assets/Screen-short-05.png) ![6](./assets/Screen-short-06.png) ![7](./assets/Screen-short-07.png) ![8](./assets/Screen-short-08.png)
 
 ## Install steps (Take care about it. This is RTFM)
 <div align="left">
@@ -105,9 +95,6 @@ yay -S obs-studio-rc ffmpeg-obs cef-minimal-obs-rc-bin pipewire pipewire-alsa pi
 
 <details>
 
-
-###### To get started, let's make sure we have all the necessary prerequisites. In this case, I'm using Paru as the AUR helper, but keep in mind that your system may require a different approach.
-
 ```sh
 git clone https://github.com/2dgirlismywaifu/My-Linux-Ricing.git
 cd My-Linux-Ricing
@@ -129,24 +116,6 @@ rsync -avxHAXP --exclude '.git*' .* ~/
 
 _Beauty community: [r/unixporn](https://www.reddit.com/r/unixporn)._
 
-**©** Elysia is a character from Honkai Impact 3rd, a game by Hoyoverse (miHoYo)
+**©** Picture used in this sources come from DeviantArt. You can find the artist: [Furukawa-Rika](https://www.deviantart.com/furukawa-rikka) and [AiAnimeArt9](https://www.deviantart.com/aianimeart9)
 
-**©** Picture used in this sources come from Pixiv and N0va Desktop
-
-**©** This repository is forked from [linuxmobile](https://github.com/linuxmobile/hyprland-dots) with clean-up some useless shell script.
-
-<!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/2dgirlismywaifu/My-Linux-Ricing.svg?style=for-the-badge&color=C9CBFF&logoColor=D9E0EE&labelColor=302D41
-[contributors-url]: https://github.com/2dgirlismywaifu/My-Linux-Ricing/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/2dgirlismywaifu/My-Linux-Ricing.svg?style=for-the-badge&color=C9CBFF&logoColor=D9E0EE&labelColor=302D41
-[forks-url]: https://github.com/2dgirlismywaifu/My-Linux-Ricing/network/members
-[stars-shield]: https://img.shields.io/github/stars/2dgirlismywaifu/My-Linux-Ricing.svg?style=for-the-badge&color=C9CBFF&logoColor=D9E0EE&labelColor=302D41
-[size-shield]: https://img.shields.io/github/repo-size/2dgirlismywaifu/My-Linux-Ricing.svg?style=for-the-badge&color=C9CBFF&logoColor=D9E0EE&labelColor=302D41
-[linecount-shield]: https://img.shields.io/tokei/lines/github/2dgirlismywaifu/My-Linux-Ricing?color=C9CBFF&labelColor=302D41&style=for-the-badge
-[commit-shield]: https://img.shields.io/github/last-commit/2dgirlismywaifu/My-Linux-Ricing.svg?style=for-the-badge&color=C9CBFF&logoColor=D9E0EE&labelColor=302D41
-[stars-url]: https://github.com/2dgirlismywaifu/My-Linux-Ricing/stargazers
-[issues-shield]: https://img.shields.io/github/issues/2dgirlismywaifu/My-Linux-Ricing.svg?style=for-the-badge&color=C9CBFF&logoColor=D9E0EE&labelColor=302D41
-[issues-url]: https://github.com/2dgirlismywaifu/My-Linux-Ricing/issues
-[license-shield]: https://img.shields.io/github/license/2dgirlismywaifu/My-Linux-Ricing.svg?style=for-the-badge&color=C9CBFF&logoColor=D9E0EE&labelColor=302D41
-[license-url]: https://github.com/2dgirlismywaifu/My-Linux-Ricing/blob/main/LICENSE
+**©** This repository is forked from [linuxmobile](https://github.com/owl4ce/dotfiles) with customized. Please give a star for owner repository if you liked it!
