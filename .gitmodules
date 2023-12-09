@@ -6,3 +6,7 @@
 	branch = qtile
 	path = .config/qtile
 	url = https://github.com/2dgirlismywaifu/My-Linux-Ricing/
+[submodule ".config/openbox"]
+	branch = openbox
+	path = .config/openbox
+	url = https://github.com/2dgirlismywaifu/My-Linux-Ricing/
