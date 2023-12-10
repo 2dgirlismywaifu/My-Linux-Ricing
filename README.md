@@ -31,8 +31,10 @@
 
 ## 🌸 Lock Screen and Login Screen
 ### The boot screen (GRUB) and login screen (SDDM) are the same for all desktop environments.
-#### You can download the boot screan at here
-#### You can download the login screen at here
+#### You can download the boot screan at [here](https://download-directory.github.io/?url=https://github.com/2dgirlismywaifu/My-Linux-Ricing/tree/main/.config/bootscreen-grub)
+#### You can download the login screen at [here](https://download-directory.github.io/?url=https://github.com/2dgirlismywaifu/My-Linux-Ricing/tree/main/.config/archcraft). Extract the zip file, rename the folder to `archcraft` and move it to `/usr/share/sddm/themes/`
+#### To apply the login screen, install sddm-conf-git, qt5-quickcontrols2 and qt5-graphicaleffects. Then open SDDM Configuration and change the theme to `archcraft`
+
 ![1](./assets/BootScreen.png)![2](./assets/LoginScreen.png)
 
 ## 🌸 [Hyprland](https://github.com/2dgirlismywaifu/My-Linux-Ricing/tree/hyprland)
