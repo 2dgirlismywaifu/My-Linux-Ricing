@@ -18,7 +18,6 @@
 - **Terminal** • [Alacritty](https://github.com/alacritty/alacritty) 💻 A cross-platform, OpenGL terminal emulator!
   with gpu support!
 - **Panel** • Cinnamon Panel🍧
-  Patched waybar following hyprland faq!
 - **File Manager** • [Nautilus](https://apps.gnome.org/en/Nautilus)🔖 Based Catppuccin theme!
 
 ## 🌸 Setup
