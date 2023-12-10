@@ -4,7 +4,7 @@
   </a>
 
 <h3 align="center", style="font-size:25px">The Cinnamon Ricing</h3>
-  <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Caveat&size=30&pause=1000&color=E462F7&center=true&vCenter=true&random=false&width=435&lines=%F0%9F%92%95+The CEO Hoyoverse: Bronya+%F0%9F%92%95" alt="Typing SVG" /></a>
+  <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Caveat&size=30&pause=1000&color=E462F7&center=true&vCenter=true&random=false&width=435&lines=%F0%9F%92%95+The+CEO+Hoyoverse%3A+Bronya+%F0%9F%92%95" alt="Typing SVG" /></a>
   <br />
   <a href="https://www.youtube.com/@linuxscoop", style="font-size:20px"><strong>Design by @LinuxScoop</strong></a>
 <hr>
