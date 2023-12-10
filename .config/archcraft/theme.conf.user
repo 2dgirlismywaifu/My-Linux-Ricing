@@ -1,0 +1,10 @@
+[General]
+
+## Background
+Background="Backgrounds/newwall.png"
+DimBackgroundImage="0.4"
+
+## Blur
+FullBlur="true"
+PartialBlur="false"
+BlurRadius="40"

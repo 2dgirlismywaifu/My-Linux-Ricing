@@ -29,6 +29,12 @@
   customizable!
 - **Hackintosh** • [My-OpenCore Hackintosh](https://github.com/2dgirlismywaifu/My-Opencore-Hackintosh)
 
+## 🌸 Lock Screen and Login Screen
+### The boot screen (GRUB) and login screen (SDDM) are the same for all desktop environments.
+#### You can download the boot screan at here
+#### You can download the login screen at here
+![1](./assets/BootScreen.png)![2](./assets/LoginScreen.png)
+
 ## 🌸 [Hyprland](https://github.com/2dgirlismywaifu/My-Linux-Ricing/tree/hyprland)
 
 ![1](./assets/screen-short-01.png)![2](./assets/screen-short-02.png)
@@ -41,6 +47,10 @@
 
 ![1](./assets/screen-short-05.png)![2](./assets/screen-short-06.png)
 
+## 🌸 [Cinnamon](https://github.com/2dgirlismywaifu/My-Linux-Ricing/tree/cinnamon)
+
+![1](./assets/screen-short-07.png)![2](./assets/screen-short-08.png)
+
 ## Credits
 <div align="center">
 
@@ -48,14 +58,17 @@
     <img alt="from-elysia-with-love" src="./assets/elysia/elysia-hi.png" width="170" height="170"/>
     <img alt="kafka-mama" src="./assets/kafka/Kafka_5.png" width="150" height="150"/>
     <img style="border-radius: 50%;" alt="furukawa-rikka-deviantart" src="https://images.weserv.nl/?url=raw.githubusercontent.com/2dgirlismywaifu/My-Linux-Ricing/main/assets/furukawa-rikka/furukawa-rikka-reverb-girl.png&h=300&w=300&fit=cover&mask=circle&maxage=7d" width="150" height="150"/>
+    <img alt="kafka-mama" src="./assets/bronya/Bronya.png" width="150" height="150"/>
   </p>
 </div>
 
 _Beauty community: [r/unixporn](https://www.reddit.com/r/unixporn)._
 
-**©** Elysia, Kafka is a character design by Hoyoverse
+**©** Elysia, Kafka, Bronya is a character design by Hoyoverse
 
 **©** Picture used in this sources come from Pixiv and N0va Desktop
+
+**©** The sticker used in this sources come from [Marin Liekuriva](https://twitter.com/MarinLiekuriva). You can buy it in [Ko-Fi](https://ko-fi.com/marinliekuriva)
 
 **©** Openbox theme use wallpaper from [furukawa-rikka](https://www.deviantart.com/furukawa-rikka)
 
