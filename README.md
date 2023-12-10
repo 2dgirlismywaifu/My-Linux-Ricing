@@ -1,76 +1,105 @@
 <div align="center">
   <a href="https://github.com/2dgirlismywaifu/My-Linux-Ricing">
-    <img class="avatar" alt="2dgirlismywaifu" src="https://images.weserv.nl/?url=avatars.githubusercontent.com/u/59259855?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d" width="200" height="200"/>
+    <img class="avatar" alt="2dgirlismywaifu" src="https://images.weserv.nl/?url=raw.githubusercontent.com/2dgirlismywaifu/My-Linux-Ricing/main/assets/bronya/Bronya.png&h=300&w=300&fit=cover&mask=circle&maxage=7d" width="200" height="200"/>
   </a>
 
-<h3 align="center", style="font-size:25px">My Linux Ricing Collection</h3>
-  <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Caveat&size=30&pause=1000&color=E462F7&center=true&vCenter=true&random=false&width=435&lines=%F0%9F%92%95+Inspired+by+r%2Funinxporn+%F0%9F%92%95" alt="Typing SVG" /></a>
+<h3 align="center", style="font-size:25px">The Cinnamon Ricing</h3>
+  <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Caveat&size=30&pause=1000&color=E462F7&center=true&vCenter=true&random=false&width=435&lines=%F0%9F%92%95+The CEO Hoyoverse: Bronya+%F0%9F%92%95" alt="Typing SVG" /></a>
   <br />
-  <a href="https://wiki.archlinux.org/title/Arch_Linux", style="font-size:20px"><strong>Long Live With Arch Linux</strong></a>
+  <a href="https://www.youtube.com/@linuxscoop", style="font-size:20px"><strong>Design by @LinuxScoop</strong></a>
 <hr>
-
-![Contributors][contributors-shield]
-  [![Stargazers][stars-shield]][stars-url]
-  ![Reposize][size-shield]
-  ![Lastcommit][commit-shield]
-  [![Issues][issues-shield]][issues-url]
-  [![APACHE License][license-shield]][license-url]
 
 </div>
 
-- **Daily Device** • MSI GF63 Thin 10SC
-- **CPU** • Intel® Core™ i5-10500H
-- **Integrated GPU** • Intel® UHD Graphics for 10th
-- **Discrete GPU** • NVIDIA GeForce GTX 1650 Max-Q Design
-- **Memory** • 16GB SODIM-DDR4
-- **Display** • 15.6" FHD (1920x1080), IPS-Level 144Hz 45% NTSC Thin Bezel
-- **Main OS** • Windows 11 Pro
-- **Second OS** • EndeavourOS (based on Arch Linux)
-  customizable!
-- **Hackintosh** • [My-OpenCore Hackintosh](https://github.com/2dgirlismywaifu/My-Opencore-Hackintosh)
+- **Desktop Environment** • [Cinnamon](https://github.com/hyprwm/Hyprland)🎨 Window Tiles
+  Everywhere!
+- **Shell** • [Zsh](https://www.zsh.org) 🐚 theme with
+  [oh-my-zsh](https://github.com/ohmyzsh/ohmyzsh) Custom designed!
+- **Terminal** • [Alacritty](https://github.com/alacritty/alacritty) 💻 A cross-platform, OpenGL terminal emulator!
+  with gpu support!
+- **Panel** • Cinnamon Panel🍧
+  Patched waybar following hyprland faq!
+- **File Manager** • [Nautilus](https://apps.gnome.org/en/Nautilus)🔖 Based Catppuccin theme!
 
-## 🌸 [Hyprland](https://github.com/2dgirlismywaifu/My-Linux-Ricing/tree/hyprland)
+## 🌸 Setup
 
-![1](./assets/screen-short-01.png)![2](./assets/screen-short-02.png)
+![1](./assets/cinnamon-screenshorts/screen-short-01.png)![2](./assets/cinnamon-screenshorts/screen-short-05.png) ![3](./assets/cinnamon-screenshorts/screen-short-06.png) ![4](./assets/cinnamon-screenshorts/screen-short-02.png) ![5](./assets/cinnamon-screenshorts/screen-short-03.png) ![6](./assets/cinnamon-screenshorts/screen-short-04.png)
 
-## 🌸 [Qtile](https://github.com/2dgirlismywaifu/My-Linux-Ricing/tree/qtile)
+## Install steps (This setup very easy to install)
+<div align="left">
 
-![1](./assets/screen-short-03.png)![2](./assets/screen-short-04.png)
+### Linux Scoop Installation Instruction
 
-## 🌸 [Openbox](https://github.com/2dgirlismywaifu/My-Linux-Ricing/tree/openbox)
+<details>
 
-![1](./assets/screen-short-05.png)![2](./assets/screen-short-06.png)
+- Follow the instruction in this [documents](./Instrustion-Linuxscoop.html)
+
+</details>
+
+### Additional Installation
+<details>
+
+#### CLI & Tools
+```sh
+yay -S htop zsh cava neofetch alacritty
+```
+
+#### Editor
+
+```sh
+yay -S visual-studio-code-bin geany neovim vim
+```
+#### Theme Based
+
+ - If you use Arch Linux, you can install the theme from the AUR repository. If you use another distro, you can install it from the source code.
+
+```sh
+yay -S catppuccin-gtk-theme-macchiato catppuccin-gtk-theme-mocha papirus-icon-theme kvantum kvantum-theme-catppuccin-git
+```
+#### Zsh
+
+```sh
+chsh -s $(which zsh)
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+```
+#### Fonts
+- The nerd fonts: choose JetBrainsMono, Iosevka
+```sh
+yay -S nerd-fonts ttf-iosevka
+```
+#### Dotfiles
+
+- Just copy the dotfiles to your home directory
+```sh
+ cp -r .config ~/
+ cp .zshrc ~/
+ cp .oh-my-zsh ~/
+```
+
+</details>
+
+</div>
+
 
 ## Credits
 <div align="center">
 
   <p float="left">
-    <img alt="from-elysia-with-love" src="./assets/elysia/elysia-hi.png" width="170" height="170"/>
-    <img alt="kafka-mama" src="./assets/kafka/Kafka_5.png" width="150" height="150"/>
-    <img style="border-radius: 50%;" alt="furukawa-rikka-deviantart" src="https://images.weserv.nl/?url=raw.githubusercontent.com/2dgirlismywaifu/My-Linux-Ricing/main/assets/furukawa-rikka/furukawa-rikka-reverb-girl.png&h=300&w=300&fit=cover&mask=circle&maxage=7d" width="150" height="150"/>
+    <img alt="ceo-bronya" src="https://raw.githubusercontent.com/2dgirlismywaifu/My-Linux-Ricing/main/assets/bronya/Bronya.png" width="170" height="170"/>
+    <img alt="sliver-wolf" src="https://raw.githubusercontent.com/2dgirlismywaifu/My-Linux-Ricing/main/assets/bronya/Silverwolf_1.png" width="170" height="170"/>
+    <img style="border-radius: 50%;" alt="furukawa-rikka-deviantart" src="https://images.weserv.nl/?url=raw.githubusercontent.com/2dgirlismywaifu/My-Linux-Ricing/main/assets/bronya/20230522_192915.png&h=300&w=300&fit=cover&mask=circle&maxage=7d" width="170" height="170"/>
   </p>
 </div>
 
 _Beauty community: [r/unixporn](https://www.reddit.com/r/unixporn)._
 
-**©** Elysia, Kafka is a character design by Hoyoverse
+**©** Bronya is a character playable from Houkai Gakuen, Honkai Impact 3 and Honkai: Star Rail. Design by Hoyoverse
 
 **©** Picture used in this sources come from Pixiv and N0va Desktop
 
-**©** Openbox theme use wallpaper from [furukawa-rikka](https://www.deviantart.com/furukawa-rikka)
+**©** The sticker used in top page this document come from [Marin Liekuriva](https://twitter.com/MarinLiekuriva). You can buy it in [Ko-Fi](https://ko-fi.com/marinliekuriva)
 
-<!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/2dgirlismywaifu/My-Linux-Ricing.svg?style=for-the-badge&color=C9CBFF&logoColor=D9E0EE&labelColor=302D41
-[contributors-url]: https://github.com/2dgirlismywaifu/My-Linux-Ricing/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/2dgirlismywaifu/My-Linux-Ricing.svg?style=for-the-badge&color=C9CBFF&logoColor=D9E0EE&labelColor=302D41
-[forks-url]: https://github.com/2dgirlismywaifu/My-Linux-Ricing/network/members
-[stars-shield]: https://img.shields.io/github/stars/2dgirlismywaifu/My-Linux-Ricing.svg?style=for-the-badge&color=C9CBFF&logoColor=D9E0EE&labelColor=302D41
-[size-shield]: https://img.shields.io/github/repo-size/2dgirlismywaifu/My-Linux-Ricing.svg?style=for-the-badge&color=C9CBFF&logoColor=D9E0EE&labelColor=302D41
-[linecount-shield]: https://img.shields.io/tokei/lines/github/2dgirlismywaifu/My-Linux-Ricing?color=C9CBFF&labelColor=302D41&style=for-the-badge
-[commit-shield]: https://img.shields.io/github/last-commit/2dgirlismywaifu/My-Linux-Ricing.svg?style=for-the-badge&color=C9CBFF&logoColor=D9E0EE&labelColor=302D41
-[stars-url]: https://github.com/2dgirlismywaifu/My-Linux-Ricing/stargazers
-[issues-shield]: https://img.shields.io/github/issues/2dgirlismywaifu/My-Linux-Ricing.svg?style=for-the-badge&color=C9CBFF&logoColor=D9E0EE&labelColor=302D41
-[issues-url]: https://github.com/2dgirlismywaifu/My-Linux-Ricing/issues
-[license-shield]: https://img.shields.io/github/license/2dgirlismywaifu/My-Linux-Ricing.svg?style=for-the-badge&color=C9CBFF&logoColor=D9E0EE&labelColor=302D41
-[license-url]: https://github.com/2dgirlismywaifu/My-Linux-Ricing/blob/main/LICENSE
+**©** The Cinnamon desktop environment ricing by [LinuxScoop](https://www.youtube.com/@linuxscoop). If you like this ricing, you can support him at [Ko-Fi](https://ko-fi.com/linuxscoop)
+

@@ -1,0 +1,672 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>How to Customize Your Cinnamon Desktop Environment with Catppuccin Color Theme</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 100%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-translucentGray { background-color: rgba(255, 255, 255, 0.0375); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+</style></head><body><article id="fba1aa1e-9100-4fdc-9f0d-06c6dc84d401" class="page sans"><header><div class="page-header-icon undefined"><img class="icon" src="https://www.notion.so/icons/notification_blue.svg"/></div><h1 class="page-title">How to Customize Your Cinnamon Desktop Environment with Catppuccin Color Theme</h1><table class="properties"><tbody><tr class="property-row property-row-text"><th><span class="icon property-icon"><div style="width:14px;height:14px;transform:scale(1.2);mask:url(/icons/laptop_gray.svg?mode=light) no-repeat center;-webkit-mask:url(/icons/laptop_gray.svg?mode=light) no-repeat center;background-color:rgba(55, 53, 47, 0.45);fill:rgba(55, 53, 47, 0.45)"></div></span>Created By</th><td>lsteam</td></tr><tr class="property-row property-row-email"><th><span class="icon property-icon"><svg viewBox="0 0 16 16" style="width:14px;height:14px;display:block;fill:rgba(55, 53, 47, 0.45);flex-shrink:0;-webkit-backface-visibility:hidden" class="typesEmail"><path d="M0.870117 8.40625C0.870117 12.8975 3.93262 15.6523 8.19824 15.6523C9.31934 15.6523 10.3242 15.5088 10.9463 15.3037C11.3975 15.1533 11.5547 14.9141 11.5547 14.6338C11.5547 14.3398 11.3428 14.1279 11.0283 14.1279C10.9326 14.1279 10.8164 14.1416 10.6797 14.1689C9.94141 14.3398 9.29883 14.4629 8.42383 14.4629C4.69141 14.4629 2.18262 12.2207 2.18262 8.44727C2.18262 4.81055 4.56836 2.28125 8.12988 2.28125C11.3223 2.28125 13.8926 4.26367 13.8926 7.74316C13.8926 9.69141 13.2363 11.0039 12.1904 11.0039C11.4932 11.0039 11.0967 10.5801 11.0967 9.85547V5.4668C11.0967 5.03613 10.8574 4.77637 10.4473 4.77637C10.0371 4.77637 9.79102 5.03613 9.79102 5.4668V6.12305H9.70215C9.36035 5.28906 8.52637 4.77637 7.52148 4.77637C5.76465 4.77637 4.53418 6.2666 4.53418 8.42676C4.53418 10.6143 5.77148 12.1318 7.57617 12.1318C8.62207 12.1318 9.4082 11.5781 9.79785 10.6279H9.87988C10.0439 11.5645 10.8506 12.1318 11.9443 12.1318C13.9131 12.1318 15.123 10.293 15.123 7.6543C15.123 3.68945 12.2109 1.09863 8.14355 1.09863C3.86426 1.09863 0.870117 4.01758 0.870117 8.40625ZM7.84277 10.9014C6.70801 10.9014 5.99707 9.95117 5.99707 8.44043C5.99707 6.93652 6.71484 5.98633 7.84961 5.98633C9.00488 5.98633 9.73633 6.92285 9.73633 8.41309C9.73633 9.93066 8.99805 10.9014 7.84277 10.9014Z"></path></svg></span>Email</th><td><a href="linuxscoops@gmail.com" class="url-value">linuxscoops@gmail.com</a></td></tr><tr class="property-row property-row-url"><th><span class="icon property-icon"><svg viewBox="0 0 16 16" style="width:14px;height:14px;display:block;fill:rgba(55, 53, 47, 0.45);flex-shrink:0;-webkit-backface-visibility:hidden" class="typesUrl"><path d="M7.69922 10.8945L8.73828 9.84863C7.91797 9.77344 7.34375 9.51367 6.91992 9.08984C5.76465 7.93457 5.76465 6.29395 6.91309 5.14551L9.18262 2.87598C10.3379 1.7207 11.9717 1.7207 13.127 2.87598C14.2891 4.04492 14.2822 5.67188 13.1338 6.82031L11.958 7.99609C12.1768 8.49512 12.2451 9.10352 12.1289 9.62988L14.0908 7.6748C15.7725 6 15.7793 3.62109 14.084 1.92578C12.3887 0.223633 10.0098 0.237305 8.33496 1.91211L5.95605 4.29785C4.28125 5.97266 4.26758 8.35156 5.96289 10.0469C6.36621 10.4434 6.90625 10.7441 7.69922 10.8945ZM8.30078 5.13184L7.26855 6.17773C8.08203 6.25293 8.66309 6.51953 9.08008 6.93652C10.2422 8.09863 10.2422 9.73242 9.08691 10.8809L6.81738 13.1504C5.66211 14.3057 4.03516 14.3057 2.87305 13.1504C1.71094 11.9883 1.71777 10.3545 2.87305 9.20605L4.04199 8.03027C3.83008 7.53125 3.75488 6.92969 3.87109 6.39648L1.91602 8.35156C0.234375 10.0264 0.227539 12.4121 1.92285 14.1074C3.61816 15.8027 5.99707 15.7891 7.67188 14.1143L10.0439 11.7354C11.7256 10.0537 11.7324 7.6748 10.0371 5.98633C9.64062 5.58301 9.10059 5.28223 8.30078 5.13184Z"></path></svg></span>Youtube</th><td><a href="https://youtube.com/c/linuxscoop" class="url-value">https://youtube.com/c/linuxscoop</a></td></tr></tbody></table></header><div class="page-body"><h1 id="bc8624bc-6233-4292-a9b8-d4c1218b995b" class="">00. Introductions</h1><hr id="29e90d4f-6769-4eda-932d-9b93b7f78f8f"/><figure id="a303631d-d033-42b8-8487-042a83f7a3b9" class="image"><a href="./assets/Screenshot_from_2023-05-08_10-19-18.png"><img style="width:1920px" src="./assets/Screenshot_from_2023-05-08_10-19-18.png"/></a></figure><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="2264d0ad-08b6-4877-bf6f-695839600f1a"><div style="font-size:1.5em"><span class="icon">📌</span></div><div style="width:100%">Welcome to the documentation guide on customizing your Cinnamon desktop environment with the captivating Catppuccin color theme. Whether you&#x27;re using Linux Mint 21.1 or other major Linux distributions such as Fedora, Arch Linux, Ubuntu, or Debian that utilize the Cinnamon desktop, this guide is here to help.<p id="d9ec63d7-9f0e-47e8-9e13-187dea4dc63a" class="">By following the steps outlined in this documentation, you&#x27;ll be able to transform your Cinnamon desktop into a visually stunning and personalized workspace. The Catppuccin color theme offers a delightful blend of warm hues and aesthetics, creating a cozy and inviting atmosphere for your daily computing activities.</p><p id="9ca3dccb-4f90-4ac2-8417-359935e0c0b7" class="">Before you begin, please note that this documentation is specifically tailored for users of Linux Mint 21.1. However, rest assured that you can also apply these customizations on other Linux distributions based on Fedora, Arch Linux, Ubuntu, or Debian that use the Cinnamon desktop environment.</p><p id="6b1e59ef-7dbc-4a2b-b08c-4c377934d2fb" class="">Throughout this documentation, we will provide detailed instructions, helpful tips, and guidance to ensure a smooth and enjoyable customization process. Whether you&#x27;re new to Linux or an experienced user, we aim to make this guide accessible and easy to follow.</p><p id="de4e63c5-d540-45b0-b853-92350aeb27b4" class="">So, let&#x27;s embark on this exciting journey of customizing your Cinnamon desktop with the mesmerizing Catppuccin color theme. Get ready to create a workspace that reflects your unique style and enhances your Linux experience. Let&#x27;s dive in and bring warmth, beauty, and personalization to your Cinnamon desktop environment.</p></div></figure><h3 id="b46eab2b-0903-442c-a100-f0944e3365fd" class="">Video</h3><hr id="513851ba-88c1-4bcf-81dc-8ff772cc3aa0"/><figure id="337f0e79-128c-47a0-8f3b-94044f3652f3"><a href="https://youtu.be/AnNx-Se9wkc" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title"></div></div><div class="bookmark-href">https://youtu.be/AnNx-Se9wkc</div></div></a></figure><h3 id="e1483be1-18a1-4ede-8374-54437782a306" class="">Screenshots</h3><hr id="85187f7e-54f0-4d7d-8455-7fc19d48d094"/><div id="71ff6dba-90d6-43a0-9c3a-36241e5d6654" class="column-list"><div id="95610cfd-d15a-45fa-b618-dfa0822f03ce" style="width:50%" class="column"><figure id="fd53035c-3e39-4ab2-9637-a4787ae34ca6" class="image"><a href="./assets/Screenshot_from_2023-05-08_10-19-01.png"><img style="width:1920px" src="./assets/Screenshot_from_2023-05-08_10-19-01.png"/></a></figure></div><div id="f74c2e64-c004-4390-9e70-67627e83e032" style="width:50%" class="column"><figure id="cb1883ec-1976-4b38-84aa-b2ca718ddf40" class="image"><a href="./assets/Screenshot_from_2023-05-08_10-22-10.png"><img style="width:1920px" src="./assets/Screenshot_from_2023-05-08_10-22-10.png"/></a></figure></div></div><div id="9c88e9cb-02ae-4f5e-b66d-04b84c25e7ab" class="column-list"><div id="4c2deaf9-60b4-40b5-b09a-4619aa637edd" style="width:50%" class="column"><figure id="843ac90e-031a-4360-a3c8-562a8958a834" class="image"><a href="./assets/Screenshot_from_2023-05-08_10-27-30.png"><img style="width:1920px" src="./assets/Screenshot_from_2023-05-08_10-27-30.png"/></a></figure></div><div id="2523ce17-0508-4831-a0ae-41a0845c63fc" style="width:50%" class="column"><figure id="b676311a-f3e5-4556-b5f4-46971ebf6508" class="image"><a href="./assets/Screenshot_from_2023-05-08_10-20-45.png"><img style="width:1920px" src="./assets/Screenshot_from_2023-05-08_10-20-45.png"/></a></figure></div></div><div id="709825f9-1485-4811-8692-f18d2ac4bb42" class="column-list"><div id="1f399d35-f84f-49d8-9e84-0f74ae83a7eb" style="width:50%" class="column"><figure id="c905c629-08da-4309-9544-697aa4b2d7b3" class="image"><a href="./assets/Screenshot_from_2023-05-14_12-58-07.png"><img style="width:1920px" src="./assets/Screenshot_from_2023-05-14_12-58-07.png"/></a></figure></div><div id="36d5cde2-508d-4c72-8ee1-555dce544109" style="width:50%" class="column"><figure id="2894cc6a-ea03-4376-b128-d4aacefada47" class="image"><a href="./assets/Screenshot_from_2023-05-14_12-39-24.png"><img style="width:1920px" src="./assets/Screenshot_from_2023-05-14_12-39-24.png"/></a></figure></div></div><h1 id="220d6275-ae34-4976-8f76-b1caf639f91e" class="">Table of Content</h1><hr id="c0265aa8-3e31-46b6-ba07-18f4a71c88c4"/><ul id="86ae2c70-3fcb-437c-98fb-6110d371c042" class="bulleted-list"><li style="list-style-type:disc"><a href="#0e272099-0836-471d-b5a4-c4dd84ac97c3">01. Initial Setup</a> </li></ul><ul id="8dcdf9e7-f1cb-455e-87d8-88fcab8c15f6" class="bulleted-list"><li style="list-style-type:disc"><a href="#f26962d0-eef1-4733-afb9-91184298020d">02. Download File Resources</a> </li></ul><ul id="5d8cb608-77ee-4bc4-a24f-c5e26f2039da" class="bulleted-list"><li style="list-style-type:disc"><a href="#67c7cf56-3a64-4261-9bce-bc0c168c5d66">03. Install GTK Theme</a> </li></ul><ul id="be991afd-4fd5-420f-874f-33fccdfefff1" class="bulleted-list"><li style="list-style-type:disc"><a href="#a7b90178-5bca-43b6-b602-079a4e11aa02">04. Install Icon Theme and start-menu-icon</a> </li></ul><ul id="6752a547-5916-4e8c-be98-49e3703b9844" class="bulleted-list"><li style="list-style-type:disc"><a href="#5c690244-2893-4af7-b582-0089612e0967">05. Install Cursors Theme</a></li></ul><ul id="7b580aa0-ef3b-4f4e-82dd-fb3a1c53894e" class="bulleted-list"><li style="list-style-type:disc"><a href="#71ad7877-5117-419c-b855-1af10608b333">06. Install Fonts and Wallpapers</a> </li></ul><ul id="c2b519fd-0493-4975-a6c4-1f96c1804211" class="bulleted-list"><li style="list-style-type:disc"><a href="#deb59b26-a474-4ad0-8f79-54266e747825">07. Install Cinnamon Applets and Config</a> </li></ul><ul id="191725f2-aab3-4059-b437-42d90f3773bf" class="bulleted-list"><li style="list-style-type:disc"><a href="#21136724-70a5-4566-bcc5-4a5166cff887">08. Apply Theme, Icon, Cursors Fonts, and Restore Cinnamon Config</a> </li></ul><ul id="98b729c5-5155-4d23-a424-aad0eb9e2b85" class="bulleted-list"><li style="list-style-type:disc"><a href="#73f1ec4e-2826-4502-a0b3-dfd129235951">09. Install and Config Plank Dock</a> </li></ul><ul id="096abf67-9a28-4bf4-a6b8-edcc43cca2e6" class="bulleted-list"><li style="list-style-type:disc"><a href="#f201c805-e0ab-4ddc-bc73-a017786f07c1">10. Install and Config Ulauncher</a> </li></ul><ul id="9c42f0d2-6e1f-4687-8bbe-7945200db470" class="bulleted-list"><li style="list-style-type:disc"><a href="#f4e50b8c-1e8b-4fe9-9dad-dc8172e8384e">11. Installing Conky and Conky Config</a> </li></ul><ul id="eaff68c4-1bbf-4fff-96ef-e28234bff3d8" class="bulleted-list"><li style="list-style-type:disc"><a href="#47eb6387-919b-4f95-afea-fb8ba775840f">12. Install and Config Glava Audio Visualizer</a> </li></ul><ul id="862b8814-7397-4f41-b9ac-d0c4eb8bc4ba" class="bulleted-list"><li style="list-style-type:disc"><a href="#0f24e969-b75e-47f5-8235-4cc6ee174b28">13. Additional Settings</a> </li></ul><ul id="862b8814-7397-4f41-b9ac-d0c4eb8bc4ba" class="bulleted-list"><li style="list-style-type:disc"><a href="#e1faa1ec-9bf6-4a98-9e00-db5a17a3e972">14. Revert back to default settings</a> </li></ul><h1 id="0e272099-0836-471d-b5a4-c4dd84ac97c3" class="">01. Initial Setup</h1><hr id="8ce6db24-6362-4f08-b600-b95ea828d68c"/><h2 id="b931c88e-e7c8-400f-8f64-aebd77316796" class="">Update your system</h2><h3 id="ea2fc06b-2d69-41ab-b263-1af1b788a292" class="">Ubuntu/Debian</h3><pre id="d18cd3f0-35e1-4c82-8a34-bf8f69e63561" class="code code-wrap"><code>sudo apt update &amp;&amp; sudo apt dist-upgrade -y</code></pre><h3 id="9dd228d0-8bb1-4de9-95ca-c7a7e8a2ad01" class="">Arch Linux - Manjaro</h3><pre id="2633d7ea-458d-495f-a10a-61fc4ea8f3a0" class="code code-wrap"><code>sudo pacman -Syyu</code></pre><h3 id="d20fa254-1e07-4701-ac2c-f21987969dc5" class="">Fedora</h3><pre id="53334ba9-3092-40cb-8b9c-15c3d08892c4" class="code code-wrap"><code>sudo dnf upgrade</code></pre><h3 id="c4d9efb7-908a-4f49-86b5-3c2f7f740c59" class="">openSUSE</h3><pre id="f0827ea2-4e3f-4fc1-9b29-501a865502c4" class="code code-wrap"><code>sudo zypper refresh &amp;&amp; sudo zypper update</code></pre><h2 id="85d4f2b7-a35b-47a1-ba54-d383b176169b" class="">Disable Desktop Icon</h2><p id="fcef76b0-cb41-403b-9698-3a190f35bebc" class=""><code>System settings &gt; Desktop &gt; Desktop Layout &gt; No Desktop icon</code></p><h2 id="47bd6245-28c5-43c2-a008-2ff1fa2fda44" class="">Window Center</h2><p id="b65aa6ab-f393-4b99-bf69-888236236472" class=""><code>System settings &gt; Windows &gt; Behavior &gt; Location of newly …</code>  select <code>Center</code></p><h2 id="6af91ef2-838e-4ca2-acac-f4e57ddddb9d" class="">Install Nautilus and Set it as Default File Manager</h2><h3 id="94f0b205-3e5a-4a0c-ba8e-d1d48b9546bc" class="">Ubuntu/Debian</h3><pre id="14e5d8be-63f8-4445-8dc1-e9990ab6f231" class="code code-wrap"><code>sudo apt install nautilus nautilus-admin nautilus-extension-gnome-terminal</code></pre><h3 id="a1b461ab-56db-4dec-9961-114f27e94e5e" class="">Arch Linux - Manjaro</h3><pre id="0a3ffbad-31b0-4ff3-8065-d1843751734f" class="code code-wrap"><code>sudo pacman -Sy nautilus nautilus-admin nautilus-extension-gnome-terminal</code></pre><pre id="674427db-a85c-4d35-a473-adbb17b8f7fb" class="code code-wrap"><code>pamac build nautilus-admin nautilus-open-any-terminal</code></pre><h3 id="f3a098b8-8967-4af6-83ea-df536d8cb36d" class="">Fedora</h3><pre id="fd5335cd-fecb-43d4-8864-0f0d1ed49fd9" class="code code-wrap"><code>sudo dnf install nautilus gnome-terminal-nautilus</code></pre><h3 id="8a55167c-6ff3-46f0-8455-2e7cd328fefe" class="">openSUSE</h3><pre id="32528689-5b18-479b-a43c-77975e3a9d3c" class="code code-wrap"><code>sudo zypper install nautilus gnome-terminal-nautilus</code></pre><h3 id="8981fc9f-9be2-485a-a367-2ee1b04fc94c" class="">Set Nautilus as the default file manager</h3><p id="615fd330-1063-40f0-87c2-0484827ae551" class=""><code><em>System Settings &gt; Preferences &gt; Preferred Applications</em></code></p><p id="2ecfafda-7206-4349-a507-ae2ecdad261e" class=""><code>File manager: Files (nautilus)</code></p><h1 id="f26962d0-eef1-4733-afb9-91184298020d" class="">02. Download File Resources</h1><hr id="4f2d6cce-d353-4afa-9f1d-0b67feb9eb28"/><p id="354cfc59-8e4c-402a-8442-20873a5109a4" class="">First, you need to download all file resources that use in this customization</p><p id="c7681d83-70b1-49b0-be95-5f4543356668" class="">File Resources:</p><figure id="d25e7ca1-13a5-48ff-a76c-4481ea96a5b2"><a href="https://www.pling.com/p/2033080/" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">Cinnamon Customization - Catppuccin Color Style 1.0</div><div class="bookmark-description">Cinnamon Customization - Catppuccin Color Style</div></div><div class="bookmark-href"><img src="https://www.pling.com/favicon.ico" class="icon bookmark-icon"/>https://www.pling.com/p/2033080/</div></div><img src="https://images.pling.com/cache/400x400/img/00/00/57/93/50/2033080/screenshot-from-2023-05-08-10-19-18.png" class="bookmark-image"/></a></figure><h1 id="67c7cf56-3a64-4261-9bce-bc0c168c5d66" class="">03. Install GTK Theme</h1><hr id="a12e329f-9f7b-4156-a548-36498bf181c0"/><p id="026ff608-310e-448e-a6c9-5bbd7cee9a77" class="">Extract and Install <code>theme.zip</code> to the home folder. From the terminal, run the following command:</p><pre id="0d0113dd-71f8-41cb-a077-cd69fbe0380d" class="code code-wrap"><code>unzip ~/Downloads/themes.zip -d ~/</code></pre><p id="026ff608-310e-448e-a6c9-5bbd7cee9a77" class="">Change folder <code>~/themes</code> to <code>~/.themes</code></p><pre id="94bfaca2-da1b-4922-ba73-ad80d2e2f06d" class="code code-wrap"><code>mv ~/themes/ ~/.themes</code></pre><h1 id="a7b90178-5bca-43b6-b602-079a4e11aa02" class="">04. Install Icon Theme and start-menu-icon</h1><hr id="41cc7447-ab70-4083-acad-b11a5d15f751"/><p id="ddb1636d-9cd2-4ac1-8d3e-3c0052851588" class="">Extract and Install<code> icons.zip</code> to  <code>$HOME/.local/share/</code> directory</p><pre id="088c01c6-9750-4ead-ace1-f9884a142c15" class="code code-wrap"><code>unzip ~/Downloads/icons.zip -d ~/.local/share/</code></pre><p id="19771558-e779-4327-9c5e-6a072e484356" class="">Extract and Install<code>start-menu-icon.zip</code> to  <code>$HOME/.local/share/</code> directory</p><pre id="b8b62d15-6a08-4230-8e22-e4948e261400" class="code code-wrap"><code>unzip ~/Downloads/start-menu-icon.zip -d ~/.local/share/icons/</code></pre><h1 id="5c690244-2893-4af7-b582-0089612e0967" class="">05. Install Cursors Theme</h1><hr id="74f3390b-305a-4e45-8490-271c683559df"/><p id="68c46cc8-f082-488f-b925-9f339c1c74c0" class="">Extract and Install<code> cursors.zip</code> to  <code>$HOME/</code> directory</p><pre id="e475a43a-bdd7-4b1e-b38b-7a9c941b4ad2" class="code code-wrap"><code>unzip ~/Downloads/cursors.zip -d ~/</code></pre><p id="026ff608-310e-448e-a6c9-5bbd7cee9a77" class="">Change folder <code>~/cursors/</code> to <code>~/.icons</code></p><pre id="80869681-d666-4743-be2e-26b0fd651af9" class="code code-wrap"><code>mv -v ~/cursors/ ~/.icons</code></pre><h1 id="71ad7877-5117-419c-b855-1af10608b333" class="">06. Install Fonts and Wallpapers</h1><hr id="6263fe02-7f17-4016-9e7a-5f438f7f5296"/><p id="3eb31006-1029-4bd6-a568-0043df10c30a" class="">Extract and Install <code>fonts.zip</code> to  <code>$HOME/.local/share/</code> directory</p><pre id="dca3baef-c793-4fa6-8fc5-8204cff43191" class="code code-wrap"><code>unzip ~/Downloads/fonts.zip -d ~/.local/share/</code></pre><p id="1d8fa7b0-5ac7-42cc-8b12-1ee36db2166a" class="">Extract and Install <code>wallpapers.zip </code>to  <code>/usr/share/backgrounds/</code> directory</p><pre id="1e1561c2-fc85-4129-b55c-56bf54f49d55" class="code code-wrap"><code>sudo unzip ~/Downloads/wallpapers.zip -d /usr/share/backgrounds/</code></pre><h1 id="deb59b26-a474-4ad0-8f79-54266e747825" class="">07. Install Cinnamon Applets and Config</h1><hr id="35b209af-15b9-43b1-8911-1ddbcc94cb85"/><p id="cd680a7d-133d-4f73-aaca-3be15b7308ac" class="">Extract and Install <code>cinnamon-applet-config.zip</code> to  <code>$HOME</code> directory</p><pre id="98a5ecf7-c76a-455c-bf20-efd9e3a289bd" class="code code-wrap"><code>unzip ~/Downloads/cinnamon-applet-config.zip -d ~/Downloads/</code></pre><pre id="0d43ea8d-cdb0-4c15-9105-2b1d1833d360" class="code"><code>rsync -av ~/Downloads/cinnamon-applet-config/.cinnamon ~/</code></pre><pre id="53dc4e8b-bc4d-46e4-85c9-80502612ab52" class="code"><code>rsync -av ~/Downloads/cinnamon-applet-config/.local ~/</code></pre><pre id="d6c618d6-21fc-42bf-9afe-ed4689ba456c" class="code"><code>rm -rfv ~/Downloads/cinnamon-applet-config</code></pre><h1 id="21136724-70a5-4566-bcc5-4a5166cff887" class="">08. Apply Theme, Icon, Cursors Fonts, and Restore Cinnamon Config</h1><hr id="28d80259-c486-4626-9e69-b286b9ddd1a2"/><h2 id="0301b751-ecb8-4409-92e0-42af2131241c" class="">Restore Cinnamon Config</h2><p id="ce958a37-62fb-44f6-b91c-304ef094a162" class="">Open terminal,</p><p id="ea1811ba-3684-4af2-84a8-045b6da00296" class="">Extract<code> cinnamon-config.zip</code> and enter to folder <code>cinnamon-config</code></p><pre id="45742ef1-ced4-4a4c-bf92-20136dc38a74" class="code code-wrap"><code>unzip ~/Downloads/cinnamon-config.zip -d ~/Downloads/</code></pre><p id="a1869edc-d302-4f3e-b202-30400114ab65" class="">Restore the cinnamon config with the following command</p><pre id="f5ddd98f-3367-4bb5-a6e7-8a68fa27c3ad" class="code code-wrap"><code>dconf load /org/cinnamon/ &lt; ~/Downloads/cinnamon-config/cinnamon-catppcn.conf</code></pre><h2 id="e3ff6ae9-799d-42b2-8de3-83d2dcfef1d9" class="">Change the default cinnamon menu</h2><p id="7f5d7a7a-60a9-47c4-8493-d049220ef673" class="">Right-click on the <code>menu icon &gt; select configure &gt; Import from file</code>, Browse to <code>~/Download/cinnamon-config</code> select file <code>cinnamon-menu-config.json</code></p><figure id="659bf03d-0748-45fa-a16c-dfb86b61bcc0" class="image"><a href="./assets/Screenshot_20230517_151858.png"><img style="width:912px" src="./assets/Screenshot_20230517_151858.png"/></a></figure><h2 id="5d9a1e1d-799c-42e4-a216-dd68846645d8" class="">Change Fonts</h2><p id="48492fc2-2d10-4234-8c70-7976bfa28a5d" class=""><code>System settings &gt; Font Selections</code></p><p id="dac988fb-e9e8-4e28-87aa-6f5edcb087ef" class="">
+</p><figure id="5c937d35-6bff-47cd-93d9-bea73f754314" class="image"><a href="./assets/Screenshot_20230517_151744.png"><img style="width:674px" src="./assets/Screenshot_20230517_151744.png"/></a></figure><h1 id="73f1ec4e-2826-4502-a0b3-dfd129235951" class="">09. Install and Config Plank Dock</h1><hr id="654af6e3-1bc1-4dd4-b34b-e2261b7c37c4"/><h2 id="aca60282-bf5c-4764-973b-b1509e688ce8" class="">Installing Plank-Dock in major Linux OS</h2><h3 id="cf719298-948d-4e63-84cd-ec2239f17bb8" class="">Ubuntu/Debian</h3><pre id="55305266-d2b2-42d2-b22f-c9c3eeded439" class="code code-wrap"><code>sudo apt install plank</code></pre><h3 id="b9c4c01f-b23f-456d-8aee-1409ceab5d80" class="">Arch Linux/Manjaro</h3><pre id="d6893aa6-2b34-4b33-bca6-86c7e1d36c7c" class="code code-wrap"><code>sudo pacman -S plank</code></pre><h3 id="b356dc19-2dbe-43f0-b3bd-00678f2a27d0" class="">Fedora</h3><pre id="773e9404-3d07-4143-87ec-a2ba2682b289" class="code code-wrap"><code>sudo dnf install plank</code></pre><h3 id="bb0035cb-9a18-4e53-8c40-4a5695738238" class="">openSUSE</h3><pre id="aca30587-98ec-46ab-8b3a-8be4219edc78" class="code code-wrap"><code>sudo zypper install plank</code></pre><h2 id="cd5fc3f1-4c33-4dd9-ae1c-69d49ebdab85" class="">Installing plank-dock theme and config</h2><p id="f7b07911-0511-49ae-9fe0-4932674740fb" class="">Extract <code>plank-theme-config.zip</code></p><pre id="5e9e00b3-ba98-45ef-8df7-25d066c60627" class="code"><code>unzip ~/Downloads/plank-theme-config.zip -d ~/Downloads/</code></pre><pre id="9ebd20a3-c29f-4edc-ba8f-36ae5f90acd3" class="code"><code>rsync -av ~/Downloads/plank-theme-config/.config ~/</code></pre><pre id="79a81665-5e8b-48e7-a32c-acfe58c85969" class="code"><code>rsync -av ~/Downloads/plank-theme-config/.local ~/</code></pre><pre id="50b8a74a-88d0-4c92-8a9e-e3fd729aa2d1" class="code"><code>rm -rf ~/Downloads/plank-theme-config</code></pre><p id="e60baccb-a183-45ca-92a6-73d1edd5853f" class="">Run plank. From the start menu type <code>plank</code> . launch <code>plank preferences </code>by hitting the button <code>Ctrl + right click</code> on plank-dock, change theme to <code>cattpcn-dark</code></p><figure id="3e4d874c-f9ab-427e-beff-dd1845962d25" class="image"><a href="./assets/Screenshot_20230517_165504.png"><img style="width:622px" src="./assets/Screenshot_20230517_165504.png"/></a></figure><h1 id="f201c805-e0ab-4ddc-bc73-a017786f07c1" class="">10. Install and Config Ulauncher</h1><hr id="b60ee6de-f7fd-4486-8190-37e968ead569"/><h2 id="44bebd35-3e53-4df5-8624-943663cf7940" class="">Installing Ulauncher in major Linux OS</h2><p id="8c846b74-1149-42c9-84da-591b5545e531" class="">Download ulauncher</p><figure id="5a47e154-907e-45de-b633-1349b3c247e7"><a href="https://ulauncher.io/#Download" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">Ulauncher — Application launcher for Linux 🐧</div></div><div class="bookmark-href"><img src="https://ulauncher.io/assets/images/ulauncher-logo.png" class="icon bookmark-icon"/>https://ulauncher.io/#Download</div></div></a></figure><pre id="4a26197a-1751-4983-9e8c-5f209163b6c7" class="code code-wrap"><code>sudo apt install ./ulauncher*.deb</code></pre><hr id="3f793f84-973d-4530-98f0-6fa8de7a07ae"/><p id="1b0643f8-dad5-495f-a8bb-14ebc598eb46" class="">Arch Linux/Manjaro Linux</p><pre id="6bdffe3d-de5c-4725-bd52-a4902bbcac7d" class="code code-wrap"><code>git clone https://aur.archlinux.org/ulauncher.git &amp;&amp; cd ulauncher &amp;&amp; makepkg -is</code></pre><hr id="e00a5765-753b-4fea-925e-eacfc874733e"/><p id="25a000b0-7439-47a0-be94-32f5d97f4c1e" class="">Fedora</p><p id="843cb326-12f1-4a70-a5b3-a07dc84958f8" class="">Source : <a href="https://src.fedoraproject.org/rpms/ulauncher/">https://src.fedoraproject.org/rpms/ulauncher/</a></p><pre id="367964cd-01ed-45c0-af07-dfef6b757df5" class="code code-wrap"><code>sudo dnf install ulauncher</code></pre><hr id="3a598c0c-5654-4ee7-ba1a-6192154c2c5a"/><p id="34c7eddf-4e02-4582-898a-fbe46e9ef9b2" class="">OpenSUSE</p><pre id="876fd056-02d4-486d-8082-f928b67b220e" class="code code-wrap"><code>sudo zypper install ulauncher</code></pre><p id="176d1bb0-e0a6-49e6-8d32-2e849df7152d" class="">Install Ulauncher Theme</p><p id="7216616d-70f3-420e-a8c0-008dd71c70b3" class="">Extract <code>ulauncher-theme.zip</code></p><pre id="5f8925a9-2929-4446-930d-c279a385feab" class="code"><code>unzip ~/Downloads/ulauncher-theme.zip -d ~/Downloads/</code></pre><pre id="77d79db4-027d-49d3-a8c6-55965545793d" class="code"><code>rsync -av ~/Downloads/ulauncher-theme/.config ~/</code></pre><pre id="f3ecc813-bcb9-44cd-a22a-0bdd91c8a9a5" class="code"><code>rm -rfv ~/Downloads/ulauncher-theme</code></pre><h1 id="f4e50b8c-1e8b-4fe9-9dad-dc8172e8384e" class="">11. Installing Conky and Conky Config</h1><hr id="c50b1f19-4b45-442c-89f9-b71d2b2215fd"/><h2 id="e7b97387-8edb-49b1-bf9c-98ff3e67c6fa" class="">Installing Conky in Major Linux OS</h2><h3 id="7a4b0d94-585f-45f4-8c60-1ef5ea82d744" class="">Ubuntu/Linux Mint/Debian</h3><pre id="a75e8ec9-568d-472a-a44a-d094b2680e15" class="code code-wrap"><code>sudo apt install conky-all jq curl moc</code></pre><h3 id="fea634ff-11fb-4991-a5db-e44d0f76189f" class="">Arch Linux/Manjaro</h3><pre id="4ab7e36e-bf0f-4d99-84e0-6b9edbb7995d" class="code code-wrap"><code>sudo pamac build conky-lua jq curl moc</code></pre><h3 id="4d8b8baa-2516-460b-a0c5-effbc5f11ba3" class="">Fedora</h3><pre id="79a655f2-686e-4b56-8769-adbbe3804e2e" class="code code-wrap"><code>sudo dnf install conky jq curl moc</code></pre><h3 id="93419894-46ad-4d1f-b077-0485ad648717" class="">OpenSUSE</h3><pre id="684a56f8-dbe7-4b4b-abe4-96153d235229" class="code code-wrap"><code>sudo zypper install conky jq curl moc</code></pre><h2 id="27fc311b-9ee3-433f-9930-05fe468e4fc6" class="">Open and Change file /etc/environment</h2><pre id="78fd0e78-4d2c-49d1-9b9d-8b8c00d489cd" class="code code-wrap"><code>sudo nano /etc/environment</code></pre><p id="3ee13149-947c-4baa-85f0-a15c1c83357d" class="">add the line :</p><pre id="6a8440be-9b8e-4d57-94b0-68f80efa51ce" class="code code-wrap"><code>MUFFIN_NO_SHADOWS=1</code></pre><h2 id="9d73a007-45a8-40a1-a524-75ef0d2ece00" class="">Install conky config</h2><ul id="dbc26013-3236-48e1-8ac9-101f5a1bd99a" class="bulleted-list"><li style="list-style-type:disc">Extract <code>conky-config.zip</code>.</li></ul><pre id="a5b55e72-d27c-4272-8e09-416382df9b34" class="code"><code>unzip ~/Downloads/conky-config.zip -d ~/Downloads/</code></pre><ul id="6de0baf9-2033-4dd3-a2d7-1ccf766b54f0" class="bulleted-list"><li style="list-style-type:disc">Move folder <code>conky</code> to <code>~/.config/</code></li></ul><pre id="4286a6fb-0637-4449-abfd-250a12b12a16" class="code"><code>rsync -av ~/Downloads/conky-config/conky ~/.config</code></pre><ul id="d236cb27-a5fd-49d6-9030-b488e2501532" class="bulleted-list"><li style="list-style-type:disc"> Move folder <code>autostart</code> to <code>~/.config/</code></li></ul><pre id="38e4ce76-fad4-4799-bcaa-cc9ac8af16c3" class="code"><code>rsync -av ~/Downloads/conky-config/autostart ~/.config</code></pre><pre id="4aac9b8e-6ad3-4b7e-b701-a6dc1481ce99" class="code"><code>rm -rf ~/Downloads/conky-config</code></pre><h1 id="47eb6387-919b-4f95-afea-fb8ba775840f" class="">12. Install and Config Glava Audio Visualizer</h1><hr id="e563ef6d-2375-48e8-9b34-e9be0f127361"/><h2 id="3b6e5d8d-db32-4182-ad9c-8d5f82c8be40" class="">Installing Glava audio visualizer on Linux</h2><p id="d221eca4-342a-446f-8db3-db58eb3cfa8b" class="">Ubuntu/Linux Mint/Debian</p><p id="9611de9b-2b13-4164-addf-c9504522d04d" class="">Install Dependency:</p><pre id="bf8f5b85-a39e-431d-b515-a9bbb18559e4" class="code code-wrap"><code>sudo apt-get install libgl1-mesa-dev libpulse0 libpulse-dev libxext6 libxext-dev libxrender-dev libxcomposite-dev liblua5.3-dev liblua5.3 lua-lgi lua-filesystem libobs0 libobs-dev meson build-essential gcc</code></pre><pre id="ce163e5c-96c2-401c-b365-5f9d7dd28d6b" class="code code-wrap"><code>sudo ldconfig</code></pre><pre id="d954be3d-528f-496c-ab81-ad249aaef2af" class="code code-wrap"><code>cd Downloads/</code></pre><pre id="5933ea50-f181-43d6-b17c-4f77b0e0a052" class="code code-wrap"><code>git clone https://gitlab.com/wild-turtles-publicly-release/glava/glava.git</code></pre><pre id="8e7042f5-434a-4a36-bffb-25cc140f97ae" class="code code-wrap"><code>cd glava</code></pre><pre id="8bcb8fde-c4d5-4806-a4bc-8d1518694d52" class="code code-wrap"><code>meson build --prefix /usr</code></pre><pre id="0e7d12f1-0fb4-497b-83f5-cf975d5b9510" class="code code-wrap"><code>ninja -C build</code></pre><pre id="ae2fa999-8d19-42ea-a600-d257b8fbe2df" class="code code-wrap"><code>sudo ninja -C build install</code></pre><pre id="7589c308-fbb1-43bc-975c-f0445f7526b7" class="code code-wrap"><code>glava --copy-config</code></pre><hr id="c74a082f-012d-445d-9534-2a4742280cb1"/><p id="ac205d71-055e-4154-aa04-a436d362646b" class="">Arch Linux/Manjaro Linux/EndeavourOS</p><pre id="d1ea4f24-4c5f-49c0-b457-0d82b7b71736" class="code code-wrap"><code>sudo pacman -S glava</code></pre><pre id="c2a4550e-bc52-42e1-a1a1-c1eb8a68fc3c" class="code code-wrap"><code>glava --copy-config</code></pre><p id="497f2c02-ba6a-4d38-9066-d618d553d07e" class="">Fedora</p><pre id="0d50f485-c4b8-4e44-ae3a-0759910eb302" class="code code-wrap"><code>sudo dnf -y install glava</code></pre><pre id="f29d99ca-009e-4490-bd04-f284f6c9636a" class="code code-wrap"><code>glava --copy-config</code></pre><hr id="6ea478d4-510d-4dad-b548-972d00fd2744"/><p id="f77362df-71b1-4a16-88fc-7b6f2fb8a525" class="">OpenSUSE</p><pre id="9e8504ea-1698-41a5-8ac0-5d6fa507a071" class="code code-wrap"><code>sudo zypper install glava</code></pre><pre id="a3b1b52e-a3eb-45b0-abd8-4b930f4c817a" class="code code-wrap"><code>glava --copy-config</code></pre><h2 id="dd6a9c74-03ad-424f-938b-43f226bc55ad" class="">Config GLAVA</h2><p id="cb712e01-1edf-44c7-85de-734f41779541" class="">Extract <code>glava-config.zip</code>, Copy/Move file <code>.config</code> to <code>$HOME</code> folder </p><pre id="e6f1f124-8188-4306-a69c-5d4ba73cc820" class="code code-wrap"><code>unzip ~/Downloads/glava-config.zip -d ~/Downloads/</code></pre><pre id="a2381392-bc95-4daa-8601-2167acb125bb" class="code code-wrap"><code>rsync -av ~/Downloads/glava-config/.config ~/</code></pre><pre id="1a961cdd-42fa-45c7-9ed1-ed05b26efeac" class="code code-wrap"><code>rm -rfv ~/Downloads/glava-config</code></pre><p id="70333abd-8b44-4e8b-b4f8-089be01049ce" class="">
+</p><p id="432d3820-f483-493e-a24b-f8b701c6bfbb" class="">More color variety :</p><figure id="421e90f2-73ee-41b2-a92f-b22378d6d37c"><a href="https://www.pling.com/p/1885500/" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">Glava Radial Nord Color Theme</div><div class="bookmark-description">Glava audio spectrum visualizer RADIAL mode with variety color based on nord color theme - https://www.nordtheme.com/ GLava is a general-purpose, highly configurable OpenGL audio spectrum...</div></div><div class="bookmark-href"><img src="https://www.pling.com/favicon.ico" class="icon bookmark-icon"/>https://www.pling.com/p/1885500/</div></div><img src="https://images.pling.com/cache/400x400/img/00/00/57/93/50/1885500/glava-logo.png" class="bookmark-image"/></a></figure><h1 id="0f24e969-b75e-47f5-8235-4cc6ee174b28" class="">13. Additional Settings</h1><hr id="a6f178fb-5041-46d0-87a7-38d88f59b536"/><h2 id="78ecaa21-b46c-4183-95a0-b94424a27d3d" class="">Install profile Catppuccin for GNOME terminal</h2><p id="0691e329-aa3c-405d-89d8-e41a02d96e79" class="">Make sure the <code>dconf</code> and <code>python3</code> commands are available on your system.</p><p id="ef0ba711-aa99-4839-a31b-db737ad24319" class="">Execute the <code>./install.py</code> script, either after cloning the repository, or via <code>curl</code>:</p><pre id="27cf1a21-a973-4a9e-86e1-f74b758aa55f" class="code code-wrap"><code>curl -L https://raw.githubusercontent.com/catppuccin/gnome-terminal/v0.2.0/install.py | python3 -</code></pre><p id="69efe7f7-e384-4ccf-912b-4869622864c9" class="">In Gnome Terminal, open <code>Edit -&gt; Preferences</code>, and enable the profile for the theme you want.</p><h3 id="55bd102d-b79f-4fbe-8c6a-c0a818a032d3" class="">Custom Firefox Web Browser</h3><p id="15adde24-b6ab-41db-b6bd-7d46d3375d7b" class="">Open terminal</p><pre id="fa6320b5-25dd-4885-ac64-1f0d17ffafd9" class="code code-wrap"><code>cd ~/Downloads</code></pre><pre id="d521159b-7f65-4f00-8472-869a525e32b8" class="code code-wrap"><code>git clone https://github.com/vinceliuice/WhiteSur-firefox-theme.git</code></pre><pre id="51d805c9-e45d-4001-962a-3dfa2426ef5a" class="code code-wrap"><code>cd WhiteSur-firefox-theme</code></pre><pre id="fa625eac-d00d-4053-9f1f-c641a02ea960" class="code code-wrap"><code>./install.sh -m</code></pre><h1 id="e1faa1ec-9bf6-4a98-9e00-db5a17a3e972" class="">Revert Back to the default settings</h1><p id="b1ed356a-2410-4815-a5c2-b1ffa6ced103" class="">Open the terminal, and type the following command:</p><pre id="56ca6c14-d0f5-46db-b732-08900e7836d5" class="code code-wrap"><code>dconf reset -f /org/cinnamon/</code></pre><h1 id="ccf3fc60-8c19-4006-8756-ea4cc098fd3d" class="">Thanks for Downloading</h1><hr id="9f20e622-83c2-4cf0-b189-706bbd7240b2"/><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="790f122f-caba-48c1-a914-7965a5d8d05a"><div style="font-size:1.5em"><span class="icon">🙏</span></div><div style="width:100%">We appreciate your support in downloading this documentation. we hope you enjoy these customizations. Please contact us at <code>linuxscoops@gmail.com</code> if you have any questions about these customizations.</div></figure><p id="530266a8-51d3-4e57-b550-94278713c767" class="">
+</p></div></article></body></html>
