@@ -32,7 +32,7 @@
 
 <details>
 
-- Follow the instruction in this [documents](./Instrustion-Linuxscoop.html)
+- Follow the instruction in this [documents](https://raw.githack.com/2dgirlismywaifu/My-Linux-Ricing/cinnamon/Instrustion-Linuxscoop.html)
 
 </details>
 
